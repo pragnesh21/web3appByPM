@@ -104,11 +104,18 @@ const Form = () => {
   )
 }
 
+
 const FormWrapper = styled.div`
-    width: 100%;
-    display:flex;
-    justify-content:center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
+
 
 const FormMain = styled.div`
     width:80%;

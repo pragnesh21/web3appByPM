@@ -16,6 +16,15 @@ const HeaderNav = () => {
       <Link passHref href={'/dashboard'}><HeaderNavLinks active={Router.pathname == "/dashboard" ? true : false} >
         Dashboard
       </HeaderNavLinks></Link>
+
+      <Link passHref href={'/contact'}><HeaderNavLinks active={Router.pathname == "/contact" ? true : false} >
+        Contact
+      </HeaderNavLinks></Link>
+
+      <Link passHref href={'/about'}><HeaderNavLinks active={Router.pathname == "/about" ? true : false} >
+        About
+      </HeaderNavLinks></Link>
+
     </HeaderNavWrapper>
   )
 }
@@ -28,6 +37,8 @@ const HeaderNavWrapper = styled.div`
   padding: 6px;
   height: 50%;
   border-radius: 10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
   `
 
 const HeaderNavLinks = styled.div`
@@ -44,6 +55,10 @@ const HeaderNavLinks = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   font-size: small;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export default HeaderNav

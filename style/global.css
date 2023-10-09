@@ -1,2 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+
+
+@media (max-width: 576px) {
+    /* Make the font size larger */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Reduce the margins */
+    .container {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .DetailWrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .LeftContainer,
+    .RightContainer {
+      width: 100%;
+    }
+  
+    .ImageSection {
+      height: 200px;
+    }
+  
+    .DonateSection {
+      margin-top: 20px;
+    }
+  
+    .FundsData {
+      flex-direction: column;
+    }
+  
+    .Funds {
+      margin-bottom: 10px;
+    }
+  
+    .Donated {
+      height: 350px;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    /* CSS styles for mobile devices */
+  
+    /* Reduce the width of the card container */
+    .card-container {
+      width: 90%;
+    }
+  
+    /* Increase the font size of the headings */
+    h6 {
+      font-size: 18px;
+    }
+  
+    /* Increase the font size of the inputs and textarea */
+    input, textarea {
+      font-size: 16px;
+    }
+  
+    /* Reduce the padding of the card content */
+    .card-content {
+      padding: 20px;
+    }
+  
+    /* Reduce the margin between the elements in the card content */
+    .card-content-row {
+      margin-bottom: 5px;
+    }
+  
+    /* Reduce the width of the button */
+    .button {
+      width: 100%;
+    }
+  }
+  
+
+  

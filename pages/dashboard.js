@@ -105,6 +105,12 @@ const CardsWrapper = styled.div`
   flex-wrap: wrap;
   width: 80%;
   margin-top: 25px;
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `
 const Card = styled.div`
   width: 30%;

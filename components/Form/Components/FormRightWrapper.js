@@ -92,7 +92,11 @@ const FormRightWrapper = () => {
 }
 
 const FormRight = styled.div`
-  width:45%;
+  width: 45%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const FormInput = styled.div`

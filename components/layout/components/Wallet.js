@@ -66,6 +66,13 @@ const ConnectWalletWrapper = styled.div`
   font-weight: bold;
   font-size: small;
   cursor: pointer;
+  /* Media query for mobile display */
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    padding: 5px 0;
+  }
 `;
 
 const Address = styled.h2`
@@ -84,6 +91,10 @@ const Balance = styled.h2`
     align-items: center;
     justify-content: center;
     margin-right: 5px;
+    @media screen and (max-width: 576px) {
+      margin-right: 0;
+    }
+
 `
 
 export default Wallet;

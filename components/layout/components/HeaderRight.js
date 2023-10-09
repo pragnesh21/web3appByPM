@@ -25,6 +25,9 @@ const HeaderRightWrapper = styled.div`
   align-items: center;
   margin-right: 16px;
   height: 50%;
+  @media screen and (max-width: 768px) {
+    height: 100%;}
+
 `
 const ThemeToggle = styled.div`
   display: flex;
